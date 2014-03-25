@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="ContactsApp.Views.SelectCityView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Grid>
+        <Rectangle Fill="Gray" Opacity="0.8" />
+        <ListBox 
+                 Background="Black"
+                 Opacity="1"
+                 x:Name="PhoneTypes" ItemsSource="{Binding Cities, Mode=TwoWay}"
+                 SelectedItem="{Binding SelectedCity, Mode=TwoWay}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="7">
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="30" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

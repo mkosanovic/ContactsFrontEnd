@@ -1,0 +1,5 @@
+﻿INSERT INTO "Country" VALUES(1,'Croatia');
+INSERT INTO "City" VALUES(1,'Zagreb','10000',1);
+INSERT INTO "PhoneType" VALUES(1,'Mobile');
+INSERT INTO "PhoneType" VALUES(2,'Work');
+INSERT INTO "PhoneType" VALUES(3,'Home');
