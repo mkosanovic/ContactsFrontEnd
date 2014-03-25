@@ -5,7 +5,9 @@
 	- Integration with Fody
 	- .net windows phone toolkit
 	- local database
-	- appbar
+	- using appbar
+	- user controls
+	- dynamic control binding
 Todo:
 	- tombstonning	
 	- web services
